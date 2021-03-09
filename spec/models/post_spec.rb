@@ -23,10 +23,6 @@ RSpec.describe Post, type: :model do
     expect(valid_post).to be_valid
   end
 
-  it "is invalid without a title" do
-    expect(missing_title).to be_invalid
-  end
-
   it "is invalid with too short content" do
     expect(short_content).to be_invalid
   end
